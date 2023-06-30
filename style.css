@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #eaeaea;
+    --operator-color: #f39c12;
+    --display-color: #ffffff;
+    --gradient-start: #4e54c8;
+    --gradient-end: #8f94fb;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./image/Maths.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+.calculator {
+    width: 310px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    text-align: center;
+    grid-gap: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px;
+}
+h2{
+    border: 1px solid white;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+#buttons { 
+    /* show 5 button on screan */
+    display: grid;
+    grid-template-columns: repeat(5, 4fr); 
+    grid-gap: 10px;
+}
+button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    color: black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px;
+}
+
+
+button.operator {
+    background-color: var(--operator-color);
+    color: black;
+}
+
+.equlebtn{
+    border-radius: 15px;
+    width: 100%;
+    background-color: #1fe23c;
+    grid-column: 1/5;
+    margin-left: 30px;
+    margin-top: -5px;
+}
+.equlebtn{
+    font-size: 20px;
+}
+.equlebtn:hover{
+    font-size: 30px;
+}
+
+.all-clear,
+.clear{
+    background-color:#e74c3c
+
+}
+.all-clear:hover,
+.clear:hover {
+    background-color:white;
+}
+.number:hover {
+    background-color: black;
+    color: white;
+    /* background-color: #1fe23c; */
+}
+.operator:hover{
+    background-color:cyan;
+}
+
+.operator,
+.number,
+#equals,
+#clear {
+    font-size: large;
+}
+
+#display {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    /* background-color: #ecf0f3; */
+    background-color: #bccd95;
+    color:black;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: large;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -9px -9px 9px #ffffff;
+}
